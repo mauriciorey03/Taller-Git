@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>To Do List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <div id="header">
-        <h1>To Do List</h1>
-        <button onclick="addTask()">Boton</button>
-        </div>
-        <div id="tasks">
-            <!-- Aquí irán las tareas -->
+    <div class="container">
+        <div class="application">
+            <h2>LISTA DE TAREAS <img src="images/icon.png"  width="30px" alt=""></h2>
+            <br>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Ingresa tu tarea">
+                <button onclick="addTarea()">Agregar</button>
+            </div>
+            <ul id="contenedor-list">
+                <li class="checked">aggt hkhui</li>
+
+            </ul>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="todo.js"></script>
 </body>
 </html>
