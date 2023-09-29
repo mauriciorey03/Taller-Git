@@ -1,0 +1,19 @@
+body{
+    background: linear-gradient(150deg, rgb(96, 96, 104), gray);
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:white
+}
+
+.container{
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(77, 80, 82);
+}
+
+hr{
+    width: 95%;
+}

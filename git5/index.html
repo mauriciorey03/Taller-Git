@@ -4,8 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Calculadora de Descuentos</h1>
+        <label for="descuento">Porcentaje de descuento:</label>
+        <input type="number" id="descuento" placeholder="Ingrese el descuento">
+        <button id="calcular">Calcular</button>
+        <br>
+        <hr>
+        <div id="resultados"></div>
+
+        <h1>mi versión</h1>
+        <input type="text" id="miValor">
+        <button onclick="agregarValor()">Incluir</button>
+        <br>
+        <input type="text" id="miDescuento">
+        <button onclick="calcularDescuento()">Calcular descuento</button>
+        
+        
+        <div id="divValores"></div>
+
+        <script src="app.js"></script>
+    </div>
 </body>
 </html>
