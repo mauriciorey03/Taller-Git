@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div>
+    <h1>MI TITULO</h1>
+    <input type="number" id="valor">
+    <button onclick="miFuncion()">añadir</button>
+    </div>
+    <script>
+        const miValor = document.getElementById("valor");
+        const newVar=parseFloat(miValor.value)
+        function miFuncion(){
+            var numb = parseInt(miValor.value);
+
+            console.log(miValor.value,numb)
+            alert(`Su valor es ${numb} ${newVar}`)
+        }
+
+    </script> -->
+
+    <!-- ---- -->
+
+<h3>titulo</h3>
+<label id="valorLabel" for="">Ingrese un número
+    <input id="valorInput" placeholder="ingrese un número">
+</label>
+<button id="valorBoton" onclick="Duplicar()">Duplicar</button>
+<p>Resultado =</p>
+<p id="valorParrafo"></p>
+
+
+
+<script>
+    //PAGINA PRINCIPAL
+    const entrada = document.getElementById("valorInput");
+    const boton = document.getElementById("valorBoton");
+    const salida = document.getElementById("valorParrafo");
+
+    function Duplicar(){
+        if (entrada.value=='') {
+            alert('Por favor escriba un valor')
+        } else {
+        let n=parseFloat(entrada.value);
+
+        let doble=n*2;
+
+        // salida.textContent=doble.toString() //GENERA TEXTO DENTRO DEL ELEMENTO SELECCIONADO
+        // salida.innerHTML += `<p> ${doble} </p> ` 
+        
+        const info = document.createElement("p")
+        info.setAttribute("id","miNuevoID")
+        info.textContent = `asdf ${doble}`
+        salida.appendChild(info)
+
+    }
+    }
+
+</script>
+
+</body>
+</html>
