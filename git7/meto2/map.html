@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1>METODO Array.prototype.map()</h1>
+        <p>El método Array.map() te permite iterar sobre un arreglo y modificar sus elementos utilizando una función callback. La función callback se ejecutará entonces en cada uno de los elementos del arreglo.</p>
+
+        <h3>SINTAXIS</h3>
+        <h4>Parametros</h4>
+        <div class="cajitas-felices">
+            <div class="first">
+                <h3>Tienes este arreglo</h3>
+                <p>let arr = [3, 4, 5, 6];</p>
+            </div>
+
+            <div class="second">
+                <h3>Ahora imagina que tienes que multiplicar cada uno de los elementos del arreglo por 3</h3>
+                <p>let arr = [3, 4, 5, 6]; <br>
+                    <br>
+                    for (let i = 0; i < arr.length; i++){ <br>
+                      arr[i] = arr[i] * 3; <br>
+                    } <br>
+                    <br>
+                    console.log(arr); // [9, 12, 15, 18] <br></p>
+            </div>
+
+            <div class="third">
+                <h3>puedes utilizar el método Array.map() para conseguir el mismo resultado.</h3>
+                <p>let arr = [3, 4, 5, 6]; <br>
+                <br>
+                    let modifiedArr = arr.map(function(element){ <br>
+                        return element *3; <br>
+                    }); <br>
+                    <br>
+                    console.log(modifiedArr); // [9, 12, 15, 18] <br></p>
+            </div>
+
+            <div class="other">
+                <h2>EXPERIMENTEMOS UN POCO</h2>
+                <p>¿QUE DESEAS HACER?</p>
+                <select  id="box-p">
+                    <option value="">SUMAR</option>
+                    <option value="">RESTAR</option>
+                    <option value="">MULTIPLICAR</option>
+                </select>
+            </div>
+
+            <div class="other-inputs">
+                <p>1- INGRESA LOS VALORES DEL ARRAY</p>
+                <input type="text" placeholder="Ingresa valor" id="input_value">
+                <button id="botonInsertarDatos" >mi botoncito</button>                
+            </div>
+        </div>
+    </header>
+    
+    <script src="map.js"></script>
+</body>
+</html>

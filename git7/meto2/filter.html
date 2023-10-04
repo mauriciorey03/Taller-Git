@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Función .filter()</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <div class="container">
+    <h2>.filter()</h2>
+    <p> El método <span>.filter()</span>. crea un nuevo array con todos los elementos que cumplan la condición implementada por la función dada. </p>
+
+    Puede usarse en:
+    <ul>
+        <li>arrays String</li>
+        <li>arrays de Números</li>
+    </ul>
+    </div>
+
+
+    <div class="miestilacho">
+        <h4>Ejemplo con string:</h4>
+        <div>
+            const miArray = ['zanahoria', 'queso', 'pan', 'jamón', 'tómate', 'cebolla'];
+            <br>
+            const resultado = miArray.filter((palabra) => palabra.length > 6);
+            <br>
+        </div>
+        <br>
+        <button onclick="filtrarPalabras()">Muestrame</button>
+
+        <hr>
+        <h4>Ejemplo con Números:</h4>
+        <div>
+            Filtra los numeros mayores a <input type="text" size="2" value="18" id="numero" style="text-align: center;"> :
+            <br>
+             numbers = [45, 4, 9, 16, 25];
+            <br>
+            <code>
+                <br>
+                &nbsp;function filtrarNumeros(value) {
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; const over18 = numbers<span>.filter</span>((number)=>number>18);
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; document.getElementById("demo").innerHTML = over18;
+                <br>
+                &nbsp;}
+            </code>
+
+            <br>
+        </div>
+        
+        <p id="demo"></p>
+      
+        <button onclick="filtrarNumeros()">Muestrame</button>
+        <script>
+            const numerito = document.getElementById('numero')
+            const numbers = [45, 4, 9, 16, 25];
+            
+            function filtrarNumeros(value) {
+                const over18 = numbers.filter((number)=>number>numerito.value);
+                document.getElementById("demo").innerHTML = over18;
+            }
+        </script>
+    </div>
+    
+<!-- titul
+deinicion
+ejemplo
+animaciòn con boton
+js -->
+</body>
+</html>
