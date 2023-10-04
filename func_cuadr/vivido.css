@@ -1,0 +1,9 @@
+body{
+    background-image: url(./assets/colors.jpg);
+}
+
+
+div  {
+    color: white;
+    background-color: rgba(27, 27, 27, 0.877);
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" id="estilos" href="normal.css">
+</head>
+<body>
+    <div>
+    <h3>Función cuadrática</h3>
+    <label for=""> <input type="text" id="a" placeholder="a"></label> <!-- distinta a cero -->
+    <label for=""> <input type="text" id="b" placeholder="b"></label> <!--  b^2-4ac distinta a cero -->
+    <label for=""> <input type="text" id="c" placeholder="c"></label> 
+    <button onclick="calcular()">Calcular</button>
+</div>
+
+    <div>
+        <h5>EL resultado es</h5>
+        <p>
+            El valor de a = <span id="va"></span>
+            <br>
+            El valor de b = <span id="vb"></span>
+            <br>
+            El valor de c = <span id="vc"></span>
+            <br>
+            <hr>
+            El resultado de la ecuación es x1 = <span id="resultado_x1"> </span>
+            <br>
+            El resultado de la ecuación es x2 = <span id="resultado_x2"> </span>
+
+        </p>
+    </div>
+
+    <hr>
+
+    <div>
+        <h4>Escoge un tema visual</h4>
+        <p>Selecciona un theme:</p>
+        <label for="estiloSelector">Estilo:</label>
+        <select name="" id="estiloSelector">
+            <option value="normal">Normal</option>
+            <option value="vivido">Colorido</option>
+        </select>
+        <button id="guardarEstilo" onclick="cambiarColor()">Guardar estilo</button>
+        
+    </div>
+
+    <script src="./assets/calcular.js"></script>
+    <script src="./assets/theme.js"></script>
+
+
+
+</body>
+</html>
