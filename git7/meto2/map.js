@@ -1,20 +1,37 @@
 const input_valores = document.getElementById('input_value')
 let contador=0
 const botonInsertarDatos = document.getElementById('botonInsertarDatos')
+const show = document.getElementById('showArray')
+const btnAction = document.getElementById('btnAction')
+const bxActions = document.getElementById('box-p')
+const showResult = document.getElementById('showResult')
 
-botonInsertarDatos.addEventListener("click", function() {
+let valores_arreglo=[]
+
+botonInsertarDatos.addEventListener("click", ()=>{
     contador++
     //console.log(contador)
+    valores_arreglo.push(parseFloat(input_valores.value))
     if(contador==5){
         botonInsertarDatos.disabled = true; 
     }
+    show.innerText = valores_arreglo
 });
 
 
-let agregar_var_
-let valores_arreglo=[]
-valores_arreglo.push(input_valores)
-
-valores_arreglo.map(function(item){
-    console.log(item + 1)
+btnAction.addEventListener('click',()=>{
+    const action = bxActions.value
+    let newArray
+    if (action==='sumar'){
+        newArray = valores_arreglo.map((item)=>item+2)
+    }
+    if (action==='restar'){
+        newArray = valores_arreglo.map((item)=>item-2)
+    }
+    if (action==='multiplicar'){
+        newArray = valores_arreglo.map((item)=>item*2)
+    }
+    showResult.innerText = newArray
 })
+
+

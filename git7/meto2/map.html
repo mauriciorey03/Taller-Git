@@ -3,25 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="map.css">
 </head>
 <body>
 
     <header>
-        <h1>METODO Array.prototype.map()</h1>
-        <p>El método Array.map() te permite iterar sobre un arreglo y modificar sus elementos utilizando una función callback. La función callback se ejecutará entonces en cada uno de los elementos del arreglo.</p>
+    </header>
+    <div class="miestilacho">
+        <div class="container">
+        <h1>método.map()</h1>
 
-        <h3>SINTAXIS</h3>
-        <h4>Parametros</h4>
+            <p>El método <span class="estilo">.map()</span> te permite iterar sobre un arreglo y modificar sus elementos utilizando una función callback. <br> La función callback se ejecutará entonces en cada uno de los elementos del arreglo.</p>
+        </div>
+        <hr>
+        <h4 >Sintaxis</h4>
+        <code>
+        let modifiedArr = arr <span class="estilo">.map</span>(function(element){ <br>
+            return element *3; <br>
+        }); <br>
+        <br>
+        console.log(modifiedArr); // [9, 12, 15, 18] <br></p>
+    </code>
+        <hr>
         <div class="cajitas-felices">
             <div class="first">
-                <h3>Tienes este arreglo</h3>
+            <h5>Tienes este arreglo</h5>
                 <p>let arr = [3, 4, 5, 6];</p>
             </div>
+            <br>
 
             <div class="second">
-                <h3>Ahora imagina que tienes que multiplicar cada uno de los elementos del arreglo por 3</h3>
+                <h5>Ahora imagina que tienes que multiplicar cada uno de los elementos del arreglo por 3</h5>
                 <p>let arr = [3, 4, 5, 6]; <br>
                     <br>
                     for (let i = 0; i < arr.length; i++){ <br>
@@ -30,36 +45,35 @@
                     <br>
                     console.log(arr); // [9, 12, 15, 18] <br></p>
             </div>
-
+            <hr>
             <div class="third">
-                <h3>puedes utilizar el método Array.map() para conseguir el mismo resultado.</h3>
+                <h5>puedes utilizar el método Array.map() para conseguir el mismo resultado.</h5>
                 <p>let arr = [3, 4, 5, 6]; <br>
                 <br>
-                    let modifiedArr = arr.map(function(element){ <br>
-                        return element *3; <br>
-                    }); <br>
-                    <br>
-                    console.log(modifiedArr); // [9, 12, 15, 18] <br></p>
+                   
             </div>
-
+            <hr>
             <div class="other">
-                <h2>EXPERIMENTEMOS UN POCO</h2>
+                <h5>EXPERIMENTEMOS UN POCO</h5>
                 <p>¿QUE DESEAS HACER?</p>
                 <select  id="box-p">
-                    <option value="">SUMAR</option>
-                    <option value="">RESTAR</option>
-                    <option value="">MULTIPLICAR</option>
+                    <option value="sumar">SUMAR</option>
+                    <option value="restar">RESTAR</option>
+                    <option value="multiplicar">MULTIPLICAR</option>
                 </select>
             </div>
 
             <div class="other-inputs">
                 <p>1- INGRESA LOS VALORES DEL ARRAY</p>
-                <input type="text" placeholder="Ingresa valor" id="input_value">
-                <button id="botonInsertarDatos" >mi botoncito</button>                
+                <input type="number" placeholder="Ingresa valor" id="input_value">
+                <button id="botonInsertarDatos" >mi botoncito</button>      
+                <p>Array: <span id="showArray"></span></p>
+                <button id="btnAction">Haz la accion</button>   <br>
+                <br> 
+                <p>Result: <span id="showResult"></span></p>
             </div>
         </div>
-    </header>
-    
+    </div>
     <script src="map.js"></script>
 </body>
 </html>

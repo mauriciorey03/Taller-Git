@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Función .filter()</title>
     <link rel="stylesheet" href="./assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
 </head>
 <body>
+    <div class="miestilacho">
     <div class="container">
-    <h2>.filter()</h2>
-    <p> El método <span>.filter()</span>. crea un nuevo array con todos los elementos que cumplan la condición implementada por la función dada. </p>
+    <h1>método.filter()</h1>
+    <p> El método <span class="estilo">.filter()</span>. crea un nuevo array con todos los elementos que cumplan la condición implementada por la función dada. </p>
 
     Puede usarse en:
     <ul>
@@ -17,9 +20,18 @@
         <li>arrays de Números</li>
     </ul>
     </div>
-
-
-    <div class="miestilacho">
+    <hr>
+    <h4>Sintaxis</h4>
+    <code>
+        &nbsp;function filtrarNumeros(value) {
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp; const over18 = numbers<span class="estilo">.filter</span>((number)=>number>18);
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp; document.getElementById("demo").innerHTML = over18;
+        <br>
+        &nbsp;}
+    </code>
+    <hr>
         <h4>Ejemplo con string:</h4>
         <div>
             const miArray = ['zanahoria', 'queso', 'pan', 'jamón', 'tómate', 'cebolla'];
@@ -28,7 +40,8 @@
             <br>
         </div>
         <br>
-        <button onclick="filtrarPalabras()">Muestrame</button>
+        <span class="estilo">resultado = ['Zanahoria','Tómate', 'Cebolla' ]</span>
+        <!-- <button onclick="filtrarPalabras()">Muestrame</button> -->
 
         <hr>
         <h4>Ejemplo con Números:</h4>
@@ -37,16 +50,7 @@
             <br>
              numbers = [45, 4, 9, 16, 25];
             <br>
-            <code>
-                <br>
-                &nbsp;function filtrarNumeros(value) {
-                <br>
-                &nbsp;&nbsp;&nbsp;&nbsp; const over18 = numbers<span>.filter</span>((number)=>number>18);
-                <br>
-                &nbsp;&nbsp;&nbsp;&nbsp; document.getElementById("demo").innerHTML = over18;
-                <br>
-                &nbsp;}
-            </code>
+            
 
             <br>
         </div>

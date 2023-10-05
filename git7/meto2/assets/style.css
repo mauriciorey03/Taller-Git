@@ -1,10 +1,33 @@
-span{
-    background-color: rgb(192, 192, 192);
+@import url('https://fonts.googleapis.com/css2?family=Tourney&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+h1 {
+    font-family: 'Tourney';
+}
+
+h2,h3,h4,h5{
+    font-family: 'Audiowide';
+}
+
+.estilo{
+    background-color: rgb(230, 228, 228);
     font-weight: bold;
+    color: rgb(41, 105, 105);
 }
 
 .miestilacho{
-    background-color: rgb(192, 192, 192);
+    background-color: rgba(192, 192, 192, 0.808);
     width: 80%;
     margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+
+}
+
+body{
+    background-image: url(fondo.avif);
+}
+code{
+    color: rgb(0, 59, 59) !important; 
+    background-color: rgb(192, 192, 192);
 }

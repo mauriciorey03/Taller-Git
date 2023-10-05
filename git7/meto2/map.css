@@ -1,0 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tourney&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    text-align: center;
+    font-family: 'Tourney', cursive;
+    font-size: 30px;
+    color: red;
+}
+
+.estilito{
+    background-color: red;
+    width: 300px;
+    height: 170px;
+    align-content: center;
+    justify-content: center;
+}
+
+.pepe1{
+    font-size: 60px;
+}
